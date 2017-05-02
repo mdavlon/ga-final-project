@@ -1,0 +1,8 @@
+.map {
+	size: 700px;
+	float:left;	
+	background-image: url(../images/Berlin_map.jpg);
+    background-size: 100% auto;
+   	background-position: center;
+    margin: 0;
+}

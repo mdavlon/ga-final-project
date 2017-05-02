@@ -456,5 +456,26 @@ img {
 /******************************************
 /* ADDITIONAL STYLES                   
 /*******************************************/
+.site-header {
+  background-color: black;
+  color: white; }
+
+.map-point {
+  background: url(images/bowielightning.jpg) no-repeat;
+  border: none;
+  width: 16px; }
+
+.map {
+  size: 700px;
+  float: left;
+  background-image: url(../images/berlin_map.jpg);
+  background-size: 100% auto;
+  background-position: center;
+  margin: 0; }
+
+.footer {
+  clear: both;
+  background-color: black;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
