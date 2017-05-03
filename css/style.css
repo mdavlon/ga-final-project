@@ -459,6 +459,9 @@ img {
 .site-header {
   background-color: black;
   color: white; }
+  .site-header nav ul li {
+    display: inline-block;
+    padding-right: 20px; }
 
 .map-point {
   background: url(images/bowielightning.jpg) no-repeat;
