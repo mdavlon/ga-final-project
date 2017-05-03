@@ -1,8 +1,19 @@
 .map {
+	position: relative;
 	size: 700px;
 	float:left;	
 	background-image: url(../images/berlin_map.jpg);
     background-size: 100% auto;
    	background-position: center;
     margin: 0;
+}
+.map-point-one button{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.map-point-two button{
+	position: absolute;
+	bottom:30px;
+	right:30px;
 }
