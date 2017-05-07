@@ -1,9 +1,8 @@
-console.log('it works');
-document.getElementById('MapPointOne').onclick = TextOne;
-document.getElementById('MapPointTwo').onclick = TextTwo;
-document.getElementById('MapPointThree').onclick = TextThree;
-document.getElementById('MapPointFour').onclick = TextFour;
-document.getElementById('MapPointFive').onclick = TextFive;
+document.getElementById('mapPointOne').onclick = TextOne;
+document.getElementById('mapPointTwo').onclick = TextTwo;
+document.getElementById('mapPointThree').onclick = TextThree;
+document.getElementById('mapPointFour').onclick = TextFour;
+document.getElementById('mapPointFive').onclick = TextFive;
 
 
 function TextOne() {
