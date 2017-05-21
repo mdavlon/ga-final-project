@@ -6,36 +6,70 @@
     	<meta name="keywords" content="site, keywords, go, here">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<title>Mark Davison</title>
+		<link href="https://fonts.googleapis.com/css?family=Arimo|Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<main class="site-container">
 			<header class="site-header">
 				<nav>
-					<ul>
-						<li>About me</li>
-						<li>My CV</li>
-						<li>My work</li>
-						<li>My jam</li>
-						<li>Message me</li>
-					</ul>
+				<div class="container">
+				<ul>
+  <li class="home"><a href="#home">About me</a></li>
+  <li class="cv"><a href="#cv">My CV</a></li>
+  <div class="dropdown">
+    <li class="dropbtn" onclick="myFunction()">My Work</li>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">David Bowie's Berlin</a>
+      <a href="#">Olympic Risk Management</a>
+      <a href="#">Friskies Cat Care</a>
+    </div>
+    </div>
+  <li class="jam"><a href="#jam">My Jam</a></li>
+  <li class="message"><a href="#message">Message me</a></li>  
+  </ul>
 				</nav>		
-				<h2>My work</h2>
 			</header>
 			<div class="site-content">
+			<div id="Heading">
+				<h3>Bowie's Berlin</h3>
+				<p>Adapted from <a href = "http://www.lastminute.com/blog/david-bowies-london-berlin-new-york/?_ga=2.156782267.1029000807.1494713121-613789197.1493058092">David Bowie's London, Berlin and New York blog post</a> for lastminute.com/Spotify.</p> 
+				<p>Map from openstreetmap.org &copy; OpenStreetMap contributors</p>
+			</div>
 			<div class="map">
-			 	<img src="images/berlinmap2.jpg">
-				<button class="map-point-one" id="mapPointOne"><img src="images/bowielightning.jpg"></button>
-				<button class="map-point-two" id="mapPointTwo"></button>
-				<button class="map-point-three" id="mapPointThree"></button>
-				<button class="map-point-four" id="mapPointFour"></button>
-				<button class="map-point-five" id="mapPointFive"></button>
+			 	<img src="images/BerlinMapCloser.jpg">
+			 	<!--<button data-fancybox data-src="#hidden-content-1" href="javascript:;"><img src="images/lightningpointer.png"></button>!-->
+				<button class="map-point" id="mapPointOne"><img src="images/lightningpointer.png"></button>
+				<button class="map-point" id="mapPointTwo"><img src="images/lightningpointer.png"></button>
+				<button class="map-point" id="mapPointThree"><img src="images/lightningpointer.png"></button>
+				<button class="map-point" id="mapPointFour"><img src="images/lightningpointer.png"></button>
+				<button class="map-point" id="mapPointFive"><img src="images/lightningpointer.png"></button>
 			</div>
-			<div class="sidebar">
-			<h3 id="sidebarHeader">Bowie's Berlin</h3>
-				<p id="sidebarParagraph">Adapted from David Bowie's London, Berlin and New York blog post for lastminute.com/Spotify. Map from openstreetmap.org &copy; OpenStreetMap contributors</p> 
-			</div>	
+			<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modalHeader"></h3>
+    <p id="modalBody"></p>
+    <aside id="modalLink"></aside>
+  </div>
+
+</div>
+			<!--<div style="display: none;" id="hidden-content1">
+			<h2>Schoneberg</h2>
+			<p>Schoneberg text.</p>
+			<aside id="sidebarLink"></aside> 
+</div>	
+			<div style="display: none;" id="hidden-content1">
+			<h2>Schoneberg</h2>
+			<p>Schoneberg text.</p>
+			<aside id="sidebarLink"></aside>!--> 
+
 			</div>
+
+
 			</main>
 			<footer class="footer">
 				&copy; 2017
@@ -43,5 +77,12 @@
 		</div><!-- .site-container -->
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="js/main.js"></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.js"></script>!-->
+			<div style="display: none;" id="hidden-content-1">
+			<h2>Schoneberg</h2>
+			<p>"After a brief, but troubled (and drug-addled) period living in LA. Bowie moved to Berlin in 1976, along with his friend, former Stooges-frontman Iggy Pop."</p> 
+			<iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A3On8pXrQMalCZ67hqb4ULN" width="250" height="80" frameborder="0"></iframe>
+
 	</body>
 </html>
