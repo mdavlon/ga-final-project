@@ -13,7 +13,7 @@
 	<body>
 		
 			<header class="site-header">
-				<nav>
+				<nav class="site-nav">
 				<div class="container">
 				<ul>
   					<li class="home"><a href="#home">About me</a></li>
@@ -26,18 +26,43 @@
      						 <a class="irm" href="#">Institute of Risk Management</a>
     						 <a class="norip" href="#">noripcord.com</a>
     						</div>
-    				</div>
   					<li class="jam"><a href="#jam">My Jam</a></li>
-  					<button id="message">Message Me</buttom>  
+  					<button id="message">Message Me</button>  
  				 </ul>
-				</nav>		
+ 				 </div>
+				</nav>
+				<nav class="mobile-nav">
+					<ul>
+						<li class="home"><a href="#home">About</a></li>
+ 					 	<li class="cv"><a href="#cv">CV</a></li>
+  						<div class="mobile-dropdown">
+   						 <li class="mobile-dropbtn" onclick="mymobileFunction()">Work</li>
+  					<li class="jam"><a href="#jam">Blog</a></li>
+  					<li class="message"><a href="#message">Contact</a></li>  
+ 				 </ul>
+ 				 </nav>
+ 				 <nav id="mobile-nav-line2">
+ 				 	<ul>
+ 				 		<li class="lmn"><a href="#">lastminute.com</a></li>
+ 				 		<li class="isobar"><a href="#">Isobar</a></li>
+ 				 		<li class="irm"><a href="#">IRM</a></li>
+ 				 		<li class="norip"><a href="#">noripcord.com</a></li>
+ 				 	</ul>
+ 				 </nav>				
 			</header>
 			<main class="site-container">
 			<div class="site-content">
 			<div id="Heading">
 				<h2>Bowie's Berlin</h2>
-				<h3>Adapted from <a href = "http://www.lastminute.com/blog/david-bowies-london-berlin-new-york/?_ga=2.156782267.1029000807.1494713121-613789197.1493058092">David Bowie's London, Berlin and New York blog post</a> for lastminute.com/Spotify.</h3> 
-				<p>After a brief, but troubled (and drug-addled) period living in LA. Bowie moved to Berlin in 1976, along with his friend, former Stooges-frontman Iggy Pop.<br><br>Inspired by its architecture and history (as well as the famous interwar novels of writer Christopher Isherwood, who Bowie had met earlier in the decade) Bowie had a long-standing fascination with the city. He was also attracted to Berlin as it was a very cheap place to live at the time, and despite already being one of the most famous musicians in the world, it was also a place where he could live a fairly ordinary life, undisturbed by the locals.<br><br>The period Bowie spent in the city became one of the most productive in his career, inspiring not just his own “Berlin Trilogy” – the classic albums Low, Heroes and Lodger – but also Pop’s The Idiot and Lust for Life, which Bowie co-wrote and produced.<br><br></p>
+				<aside id="mobile-intro">
+				<h3>Adapted from <a href = "http://www.lastminute.com/blog/david-bowies-london-berlin-new-york/?_ga=2.156782267.1029000807.1494713121-613789197.1493058092">David Bowie's London, Berlin and New York blog post</a> for lastminute.com/Spotify.</h3>
+				<p>Best viewed in desktop mode</p>
+				</aside>
+				<p>After a brief, but troubled (and drug-addled) period living in LA. Bowie moved to Berlin in 1976, along with his friend, former Stooges-frontman Iggy Pop.</p>
+				<p>Inspired by its architecture and history (and it also helped that the city was very cheap) Bowie had a long-standing fascination with the city. And the period Bowie spent there became one of the most productive in his career, inspiring not just his own “Berlin Trilogy” – the classic albums Low, Heroes and Lodger – but also Pop’s The Idiot and Lust for Life.</p>
+			</div>	
+			<div id="map-intro">	
+			<p>Explore the map to discover some of the sights and places that most inspired Bowie.</p>
 			</div>
 			<div class="map">
 			 	<img src="images/BerlinMapCloser.jpg">
@@ -47,7 +72,12 @@
 				<button class="map-point" id="mapPointFour"><img src="images/lightningpointer.png"></button>
 				<button class="map-point" id="mapPointFive"><img src="images/lightningpointer.png"></button>
 			</div>
+<div id="mobile-text">
+<h3>sample text</h3>
+<p>sample text</p>
+</div>			
 <div id="mapcopyright">
+			<p>Adapted from <a href = "http://www.lastminute.com/blog/david-bowies-london-berlin-new-york/?_ga=2.156782267.1029000807.1494713121-613789197.1493058092">David Bowie's London, Berlin and New York blog post</a> for lastminute.com/Spotify.</p> 
 			<p>Map from openstreetmap.org &copy; OpenStreetMap contributors</p>
 			</div>
 	<div id="myModal" class="modal">
@@ -69,11 +99,13 @@
 
 			</main>
 			<footer class="footer">
-				<span>&copy; 2017 Mark Davison</span>
+				<span class="copy">&copy; 2017 Mark Davison</span>
+				<span class ="social">
 				<a href="https://www.twitter.com/markrdavison" class="fa fa-twitter"></a>
 				<a href="https://www.instagram.com/markrdavison" class="fa fa-instagram"></a>
 				<a href="https://www.linkedin.com/in/mark-davison-74727027" 
 				class="fa fa-linkedin"></a>
+				</span>
 			</footer>
 		</div>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>

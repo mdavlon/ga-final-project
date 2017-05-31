@@ -1,7 +1,6 @@
 
 var modal = document.getElementById('myModal');
 var span = document.getElementsByClassName('close')[0];
-//var map = document.getElementById('')
 var modalback = document.getElementById("modalback");
 
 function myFunction() {
@@ -22,7 +21,22 @@ window.onclick = function(event) {
     }
   }
 }
+function mymobileFunction() {
+  document.getElementById("mobile-nav-line2").style.display = "block";
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.mobile-dropbtn')) {
 
+    var mobiledropdowns = document.getElementById("mobile-nav-line2");
+    var i;
+    for (i = 0; i < mobiledropdowns.length; i++) {
+      var openmobileDropdown = mobiledropdowns[i];
+      if (openmobileDropdown.classList.contains('show')) {
+        openmobileDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 span.onclick = function() {
     modal.style.display = "none";
     modalback.style.display = "none";

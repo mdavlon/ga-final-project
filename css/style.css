@@ -489,6 +489,7 @@ body {
 #message:hover, #message:focus {
   background-color: goldenrod;
   border:none;
+  cursor: pointer;
 }
 
 
@@ -496,7 +497,9 @@ body {
 .site-content {
   font-family: 'Playfair Display', serif
 }
-
+.mobile-nav {
+  display:none;
+}
 .map {
   float:left;
   position: relative;
@@ -518,6 +521,7 @@ button {
   background-color:transparent;
   border:none;
   padding:none;
+  cursor: pointer;
 }
 
 #mapcopyright {
@@ -559,6 +563,15 @@ button {
   bottom: 55%;
   right:28%;
 }
+
+#mobile-intro {
+  display:none;
+}
+
+#mobile-text {
+  display:none;
+}
+
 
 #overlay {
     position: fixed; /* Sit on top of the page content */
@@ -699,3 +712,57 @@ button {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+.copy {
+  padding-left: 40px;
+}
+.social {
+  padding-left: 100px;
+}
+#mobile-nav-line2 {
+    display: none;
+    position: absolute;
+    background-color: #434549;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+@media only screen and (max-width:500px) {
+.mobile-nav {
+  display:block;
+}
+.mobile-dropbtn {
+    background-color: #434549;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.mobile-dropbtn:hover, .dropbtn:focus {
+    background-color: #4CAF50;
+}
+
+.site-nav {
+  display:none;
+}
+.map {
+  display:none;
+}
+.map-point{
+display:none;
+}
+#map-intro{
+  display:none;
+}
+#mobile-text {
+  display:block;
+}
+#mapcopyright {
+  display:none;
+}
+#mobile-intro {
+  display:block;
+}  
+}
