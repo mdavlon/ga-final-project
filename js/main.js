@@ -96,7 +96,7 @@ function TextFour() {
   modal.style.display = "block";
   modalback.style.display = "block";
   document.getElementById('Heading').style.display = "none";
-  document.getElementById('modalHeader').innerText = "Potsdamer Platz to KaDaWe";
+  document.getElementById('modalHeader').innerText = "Potsdamer Platz to KaDeWe";
   $('#modalBody').html("During the period that Bowie lived in the city, Berlin was still very much a run-down, divided and even dangerous city.<br><br>For his comeback single in 2013, Where Are We Now, Bowie reflected on how much the city had changed, documenting a journey from Potsdamer Platz, to the Dschungel disco and the KaDeWe department store.<br><br>During his time in the city, at the height of the Cold War, the less-than-3km trip was a difficult journey, crossing the divide of the then-desolate wall-side surroundings of Potsdamer Platz to the relative opulence of Dshungel (known as Berlin’s answer to Studio 54) and KaDeWe. Now, in 2013, it was as simple as jumping on a train (you can do so too – just take the U2 line from Potsdamer Platz Bahnhof and hop off at Wittenbergplatz).<br><br>Today, Potsdamer Platz is a bustling area, surrounded by shops and offices. Dschungel closed down, but you can stay in its former home – which is now the Ellington Hotel (inspired by the club’s previous life as a jazz venue).");
   document.getElementById('modalLink').innerHTML = '<iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A6GrDJu7q8VAxbKdUlYzezT" width="250" height="80" frameborder="0"></iframe>';
 }

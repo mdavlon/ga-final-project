@@ -537,31 +537,31 @@ button {
 
  #mapPointOne {
   position: absolute;
-  bottom: 13%;
-  left: 17%;
+  bottom: 8%;
+  left: 13%;
 }  
 
 #mapPointTwo {
   position: absolute;
-  bottom: 11%;
+  bottom: 5%;
   right: 5%;}
 
 #mapPointThree {
   position: absolute;
-  bottom: 62%;
-  right: 60%;
+  bottom: 80%;
+  right: 61%;
 }
 
 #mapPointFour {
   position: absolute;
-  bottom: 51%;
-  left:6%;
+  bottom: 57%;
+  left:8%;
 }
 
 #mapPointFive {
   position: absolute;
-  bottom: 55%;
-  right:28%;
+  bottom: 57%;
+  right:19%;
 }
 
 #mobile-intro {
