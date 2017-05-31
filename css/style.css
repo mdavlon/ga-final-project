@@ -764,5 +764,12 @@ display:none;
 }
 #mobile-intro {
   display:block;
+}
+.mobile-title {
+  margin-top: 40px;
+} 
+iframe {
+  margin-bottom: 20px;
+} 
 }  
 }

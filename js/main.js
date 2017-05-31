@@ -22,7 +22,7 @@ window.onclick = function(event) {
   }
 }
 function mymobileFunction() {
-  document.getElementById("mobile-nav-line2").style.display = "block";
+  document.getElementById("mobile-nav-line2").classList.toggle("show");
 }
 window.onclick = function(event) {
   if (!event.target.matches('.mobile-dropbtn')) {
