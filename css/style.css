@@ -491,13 +491,15 @@ body {
   border:none;
   cursor: pointer;
 }
-
+.mobilemessage:hover, .mobilemessage:focus {
+  background-color: goldenrod;
+}
 
 
 .site-content {
   font-family: 'Playfair Display', serif
 }
-.mobile-nav {
+#menu {
   display:none;
 }
 .map {
@@ -508,10 +510,7 @@ body {
   padding: 20px 0px 10px;
 }
 
- .sidebar {
-  padding:5px;
-  margin:5px;
- } 
+ 
 .aside {
   padding:none;
   margin:none;
@@ -571,20 +570,8 @@ button {
 #mobile-text {
   display:none;
 }
-
-
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */ 
+.slicknav_menu {
+  display:none;
 }
 
 .modal {
@@ -610,7 +597,7 @@ button {
     height: 100%; /* Could be more or less, depending on screen size */
 }
 .modal-content iframe{
-  margin-left:25%;
+  margin-left:15%;
 }
 
 /* The Close Button */
@@ -719,30 +706,23 @@ button {
 .social {
   padding-left: 100px;
 }
-#mobile-nav-line2 {
-    display: none;
-    position: absolute;
-    background-color: #434549;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+
+@media screen and (max-width:675px) {
+  
+  .site-nav ul {
+    padding:0;
+  }
 }
+
 
 @media only screen and (max-width:500px) {
-.mobile-nav {
-  display:block;
-}
-.mobile-dropbtn {
-    background-color: #434549;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-
 .site-nav {
   display:none;
 }
+.slicknav_menu {
+  display:block;
+}
+
 .map {
   display:none;
 }
@@ -768,4 +748,28 @@ iframe {
   margin-bottom: 20px;
 } 
 }  
+}
+
+@media only screen and (max-width:470px) {
+  .footer a{
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  }
+
+
+  .slicknav_menu {
+display: none;
+}
+ @media screen and (max-width: 40em) {
+.js #menu {
+display: none;
+}
+.js .slicknav_menu {
+display: block;
+}
+
+}
+ul#menu {
+  font-family: 'Arimo', sans-serif;
 }
