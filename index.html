@@ -8,6 +8,7 @@
 		<title>Mark Davison</title>
 		<link href="https://fonts.googleapis.com/css?family=Arimo|Playfair+Display" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="SlickNav-master/dist/slicknav.css" />
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -26,29 +27,27 @@
      						 <a class="irm" href="#">Institute of Risk Management</a>
     						 <a class="norip" href="#">noripcord.com</a>
     						</div>
-  					<li class="jam"><a href="#jam">My Jam</a></li>
+  					<li class="jam"><a href="#jam">My Blog</a></li>
   					<button id="message">Message Me</button>  
  				 </ul>
  				 </div>
 				</nav>
-				<nav class="mobile-nav">
-					<ul>
-						<li class="home"><a href="#home">About</a></li>
- 					 	<li class="cv"><a href="#cv">CV</a></li>
-  						<div class="mobile-dropdown">
-   						 <li class="dropbtn" onclick="mymobileFunction()">Work</li>
-  					<li class="jam"><a href="#jam">Blog</a></li>
-  					<li class="message"><a href="#message">Contact</a></li>  
- 				 </ul>
- 				 </nav>
- 				 <nav id="mobile-nav-line2">
- 				 	<ul>
- 				 		<li class="lmn"><a href="#">lastminute.com</a></li>
- 				 		<li class="isobar"><a href="#">Isobar</a></li>
- 				 		<li class="irm"><a href="#">IRM</a></li>
- 				 		<li class="norip"><a href="#">noripcord.com</a></li>
- 				 	</ul>
- 				 </nav>				
+ 				 <ul id="menu">
+ 	<li class="home"><a href="#">About</a></li>
+ 	<li class="cv"><a href="#">CV</a></li>			 
+    <li class="dropbtn">Work
+        <ul>
+            <li><a href="#">lastminute.com</a></li>
+                    <li><a href="#">Isobar</a></li>
+                    <li><a href="#">Institute of Risk Management</a></li>
+                    <li><a href="#">noripcord.com</a></li>
+                </ul>
+            </li>
+            <li class="jam"><a href="#">Blog</a></li>
+            <li class="mobilemessage"><a href="#">Contact</a></li>
+        </ul>
+    </li>
+</ul>
 			</header>
 			<main class="site-container">
 			<div class="site-content">
@@ -122,5 +121,6 @@
 		</div>
 		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="SlickNav-master/dist/jquery.slicknav.js"></script>
 	</body>
 </html>

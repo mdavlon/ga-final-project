@@ -739,10 +739,6 @@ button {
     cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
-.mobile-dropbtn:hover, .dropbtn:focus {
-    background-color: #4CAF50;
-}
 
 .site-nav {
   display:none;
