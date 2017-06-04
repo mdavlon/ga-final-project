@@ -2,12 +2,14 @@
 var modal = document.getElementById('myModal');
 var span = document.getElementsByClassName('close')[0];
 var modalback = document.getElementById("modalback");
+var formbutton = document.getElementById("message");
+var modalform = document.getElementById("modalform");
+var formclose = document.getElementsByClassName("formclose");
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
@@ -26,26 +28,27 @@ $(document).ready(function(){
   $('#menu').slicknav();
 });
 
+formbutton.onclick = function() {
+  modalform.style.display = "block";
+  modalback.style.display = "block";
+}
+
 span.onclick = function() {
+  console.log("works")
     modal.style.display = "none";
     modalback.style.display = "none";
-}
+    }
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
         modalback.style.display = "none";
   }
 }
-document.getElementById('message').onclick = on;
-
-function on() {
-    modalback.style.display = "block";
-}
-
-//document.getElementById('message').onclick = off;
-
-function off() {
-    document.getElementById("modalback").style.display = "none";
+ 
+formclose.onclick = function() {
+  console.log("works")
+modalform.style.display = "none";
+modalback.style.display = "none";
 }
 
 document.getElementById('mapPointOne').onclick = TextOne;

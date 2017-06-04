@@ -94,7 +94,7 @@
 			</div>
 	<div id="myModal" class="modal">
 		<span class="close">&times;</span>
-  <!-- Modal content -->
+  
   <div class="modal-content">
     <h3 id="modalHeader"></h3>
     <p id="modalBody"></p>
@@ -107,6 +107,24 @@
 
 			</div>
 
+<div id="modalform">
+    <span class="formclose">&times;</span>
+    <div class="formcontent">
+    <h3>Say hello</h3>
+    <form id="contactform" name="contactform" method="post" action="index.html">
+      <label for="yourname">Your name</label>
+      <input type="text" name="yourname" id="yourname" class="txtfield" tabindex="1">
+      
+      <label for="youremail">Your email</label>
+      <input type="email" name="youremail" id="youremail" class="txtfield" tabindex="2">
+
+      <label for="yourmessage">Your message</label>
+      <textarea name="yourmessage" id="yourmessage" class="txtfield" tabindex="3"></textarea>
+      
+      <div class="center"><input type="submit" name="submit" id="submit" class="submitbtn hidemodal" value="Submit" tabindex="4"></div>
+      </div>
+    </form>
+  </div>
 
 			</main>
 			<footer class="footer">
