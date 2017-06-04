@@ -701,10 +701,12 @@ button {
 .show {display:block;}
 
 .copy {
-  padding-left: 40px;
+  display: inline-flex;
+  padding-left: 2rem;
 }
 .social {
-  padding-left: 100px;
+  display: inline-flex;
+  padding-left: 3rem;
 }
 
 @media screen and (max-width:675px) {
@@ -749,13 +751,6 @@ iframe {
 } 
 }  
 }
-
-@media only screen and (max-width:470px) {
-  .footer a{
-  padding: 10px;
-  font-size: 20px;
-  color: white;
-  }
 
 
   .slicknav_menu {
